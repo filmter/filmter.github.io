@@ -1,0 +1,1 @@
+html,body{height:100%;padding:0;margin:0}body{display:flex;flex-direction:column}#app{flex-grow:1;display:flex;flex-direction:column}.toobar{background:#ccc;padding:5px;display:flex;align-items:center;justify-between:center}#canvas{flex-grow:1;width:100%;height:100%;margin:auto;box-sizing:border-box}
