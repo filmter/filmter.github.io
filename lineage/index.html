@@ -21,7 +21,7 @@
 
   <div id="app">
     <div class="toobar">
-      <el-select-v2 v-model="filterString" :options="options" filterable clearable size="small" placeholder="请选择表名称" style="width: 300px; margin-right: 6px;" />
+      <el-select-v2 v-model="filterString" :options="options" filterable clearable size="small" placeholder="请选择表名称" style="width: 300px; margin-right: 6px;"></el-select-v2>
       <el-button type="primary" size="small" @click="handleFullscreen">FullScreen</el-button>
       <input v-model="zoom" type="range" min="1" max="100" step="1" />
       <span>{{zoom}}</span>
