@@ -12,21 +12,30 @@
   <script src="//unpkg.com/vue@3"></script>
   <!-- Import component library -->
   <script src="//unpkg.com/element-plus"></script>
-  <script type="module" crossorigin src="/lineage/assets/index.e07cfb92.js"></script>
-  <link rel="stylesheet" href="/lineage/assets/index.b41a17b0.css">
+  <script type="module" crossorigin src="/lineage/assets/index.d00cdaea.js"></script>
+  <link rel="stylesheet" href="/lineage/assets/index.6eee7848.css">
 </head>
 
 <body>
   <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
 
   <div id="app">
-    <div class="toobar">
+    <el-tabs v-model="activeTab" tab-position="left" class="tabs-box">
+      <template v-for="it in tabs">
+        <el-tab-pane :key="it.name" :label="it.label" :name="it.name">
+        </el-tab-pane>
+      </template>
+    </el-tabs>
+    <div class="component-box">
+      <component :is="activeTab" />
+    </div>
+    <!-- <div class="toobar">
       <el-select-v2 v-model="filterString" :options="options" filterable clearable size="small" placeholder="请选择表名称" style="width: 300px; margin-right: 6px;"></el-select-v2>
       <el-button type="primary" size="small" @click="handleFullscreen">FullScreen</el-button>
       <input v-model="zoom" type="range" min="1" max="100" step="1" />
       <span>{{zoom}}</span>
     </div>
-    <div id="canvas"></div>
+    <div id="canvas"></div> -->
   </div>
 
   
