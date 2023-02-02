@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Data Lineage Renderer</title>
+  <!-- Import style -->
+  <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+  <!-- Import Vue 3 -->
+  <script src="//unpkg.com/vue@3"></script>
+  <!-- Import component library -->
+  <script src="//unpkg.com/element-plus"></script>
+  <script type="module" crossorigin src="/renderer2d/assets/index.df336ff7.js"></script>
+  <link rel="stylesheet" href="/renderer2d/assets/index.ee106fd7.css">
+</head>
+
+<body>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+  <div id="app">
+    <el-tabs v-model="activeTab" tab-position="left" class="tabs-box">
+      <template v-for="it in tabs">
+        <el-tab-pane :key="it.name" :label="it.label" :name="it.name">
+        </el-tab-pane>
+      </template>
+    </el-tabs>
+    <div class="component-box">
+      <component :is="activeTab" />
+    </div>
+    <!-- <div class="toobar">
+      <el-select-v2 v-model="filterString" :options="options" filterable clearable size="small" placeholder="请选择表名称" style="width: 300px; margin-right: 6px;"></el-select-v2>
+      <el-button type="primary" size="small" @click="handleFullscreen">FullScreen</el-button>
+      <input v-model="zoom" type="range" min="1" max="100" step="1" />
+      <span>{{zoom}}</span>
+    </div>
+    <div id="canvas"></div> -->
+  </div>
+
+  
+</body>
+
+</html>
