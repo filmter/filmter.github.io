@@ -1,0 +1,1 @@
+import{_ as t,g as d,f as e,z as r}from"./app.c8d93939.js";const f=JSON.parse('{"title":"打包工具对比","description":"","frontmatter":{},"headers":[],"relativePath":"notes/it/web/_打包工具.md","lastUpdated":1676011096000}'),a={name:"notes/it/web/_打包工具.md"},_=r("",2),s=[_];function h(o,n,i,l,c,p){return e(),d("div",null,s)}const b=t(a,[["render",h]]);export{f as __pageData,b as default};
