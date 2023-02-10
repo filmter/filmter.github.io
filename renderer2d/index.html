@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Data Lineage Renderer</title>
+  <title>Data Renderer</title>
   <!-- Import style -->
   <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
   <!-- Import Vue 3 -->
@@ -13,30 +13,33 @@
   <script src="//unpkg.com/vue-router@4"></script>
   <!-- Import component library -->
   <script src="//unpkg.com/element-plus"></script>
-  <script type="module" crossorigin src="/renderer2d/assets/index.67e6a16e.js"></script>
+  <script type="module" crossorigin src="/renderer2d/assets/index.753d61e6.js"></script>
   <link rel="stylesheet" href="/renderer2d/assets/index.efc84c1e.css">
 </head>
 
 <body>
-  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
 
   <div id="app">
-    <el-tabs v-model="activeTab" tab-position="left" class="tabs-box">
+    <el-menu
+      :default-active="activeTab"
+      router
+    >
+      <template v-for="it in routes.filter(i => i.name)" :key="it.path">
+        <el-menu-item :index="it.path">
+          <!-- <el-icon><setting /></el-icon> -->
+          <span>{{it.name}}</span>
+        </el-menu-item>
+      </template>
+    </el-menu>
+    <!-- <el-tabs v-model="activeTab" tab-position="left" class="tabs-box">
       <template v-for="it in routes.filter(i => i.name)" :key="it.path">
         <el-tab-pane :label="it.name" :name="it.path">
         </el-tab-pane>
       </template>
-    </el-tabs>
+    </el-tabs> -->
     <div class="component-box">
       <router-view />
     </div>
-    <!-- <div class="toobar">
-      <el-select-v2 v-model="filterString" :options="options" filterable clearable size="small" placeholder="请选择表名称" style="width: 300px; margin-right: 6px;"></el-select-v2>
-      <el-button type="primary" size="small" @click="handleFullscreen">FullScreen</el-button>
-      <input v-model="zoom" type="range" min="1" max="100" step="1" />
-      <span>{{zoom}}</span>
-    </div>
-    <div id="canvas"></div> -->
   </div>
 
   
