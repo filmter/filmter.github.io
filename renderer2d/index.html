@@ -1,48 +1,130 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Data Renderer</title>
-  <!-- Import style -->
-  <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
-  <!-- Import Vue 3 -->
-  <script src="//unpkg.com/vue@3"></script>
-  <script src="//unpkg.com/vue-router@4"></script>
-  <!-- Import component library -->
-  <script src="//unpkg.com/element-plus"></script>
-  <script type="module" crossorigin src="/renderer2d/assets/index.0e7376da.js"></script>
-  <link rel="stylesheet" href="/renderer2d/assets/index.efc84c1e.css">
-</head>
+    <title>@storybook/cli - Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body>
+    
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./sb-common-assets/fonts.css" />
 
-  <div id="app">
-    <el-menu
-      :default-active="activeTab"
-      router
-    >
-      <template v-for="it in routes.filter(i => i.name)" :key="it.path">
-        <el-menu-item :index="it.path">
-          <!-- <el-icon><setting /></el-icon> -->
-          <span>{{it.name}}</span>
-        </el-menu-item>
-      </template>
-    </el-menu>
-    <!-- <el-tabs v-model="activeTab" tab-position="left" class="tabs-box">
-      <template v-for="it in routes.filter(i => i.name)" :key="it.path">
-        <el-tab-pane :label="it.name" :name="it.path">
-        </el-tab-pane>
-      </template>
-    </el-tabs> -->
-    <div class="component-box">
-      <router-view />
-    </div>
-  </div>
+    <link href="./sb-manager/runtime.mjs" rel="modulepreload" />
 
-  
-</body>
+    
+    <link href="./sb-addons/links-0/manager-bundle.mjs" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-controls-1/manager-bundle.mjs" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-actions-2/manager-bundle.mjs" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-backgrounds-3/manager-bundle.mjs" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-viewport-4/manager-bundle.mjs" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-toolbars-5/manager-bundle.mjs" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-measure-6/manager-bundle.mjs" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-outline-7/manager-bundle.mjs" rel="modulepreload" />
+    
+    <link href="./sb-addons/interactions-8/manager-bundle.mjs" rel="modulepreload" />
+       
 
+    <style>
+      #storybook-root[hidden] {
+        display: none !important;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    <div id="root"></div>
+
+    
+    <script>
+      
+        
+          window['FEATURES'] = {
+  "warnOnLegacyHierarchySeparator": true,
+  "buildStoriesJson": false,
+  "storyStoreV7": true,
+  "argTypeTargetsV7": true,
+  "legacyDecoratorFileOrder": false
+};
+        
+      
+        
+          window['REFS'] = {};
+        
+      
+        
+          window['LOGLEVEL'] = "info";
+        
+      
+        
+          window['DOCS_OPTIONS'] = {
+  "defaultName": "Docs",
+  "autodocs": "tag"
+};
+        
+      
+        
+          window['CONFIG_TYPE'] = "PRODUCTION";
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </script>
+    
+
+    <script type="module">
+      import './sb-manager/runtime.mjs';
+
+      
+      import './sb-addons/links-0/manager-bundle.mjs';
+      
+      import './sb-addons/essentials-controls-1/manager-bundle.mjs';
+      
+      import './sb-addons/essentials-actions-2/manager-bundle.mjs';
+      
+      import './sb-addons/essentials-backgrounds-3/manager-bundle.mjs';
+      
+      import './sb-addons/essentials-viewport-4/manager-bundle.mjs';
+      
+      import './sb-addons/essentials-toolbars-5/manager-bundle.mjs';
+      
+      import './sb-addons/essentials-measure-6/manager-bundle.mjs';
+      
+      import './sb-addons/essentials-outline-7/manager-bundle.mjs';
+      
+      import './sb-addons/interactions-8/manager-bundle.mjs';
+      
+    </script>
+
+    <link href="./sb-preview/runtime.mjs" rel="prefetch" as="script" />
+  </body>
 </html>
