@@ -1,0 +1,1 @@
+import{_ as e,f as t,e as a}from"./app.d04813f8.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"notes/other/car.md","lastUpdated":1683370778000}'),r={name:"notes/other/car.md"};function o(s,c,n,p,d,_){return a(),t("div")}const m=e(r,[["render",o]]);export{f as __pageData,m as default};
