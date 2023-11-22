@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>字符</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="模型图标" transform="translate(-43.000000, -54.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="字符" transform="translate(43.375172, 54.500000)">
+                <path d="M7.74191481,10.3686844 L6.77416403,7.77651332 L3.22577495,7.77651332 L2.25805466,10.3686844 L0,10.3686844 L3.54835856,0 L6.45161093,0 L10,10.3686844 L7.74194532,10.3686844 L7.74191481,10.3686844 Z M4.83869295,2.91618869 L3.87094215,5.83237735 L6.12899683,5.83237735 L5.16127654,2.9162192 L4.83869295,2.9162192 L4.83869295,2.91618869 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>
